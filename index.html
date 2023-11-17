@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">a
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do-list</title>
+</head>
+<body background ="background.jpg">
+    <div class="container">
+        <div class="header">
+            <h2>TODAYS-LIST</h2>
+            
+            
+            <div id="dailyInfo">
+                <div class="daily-info-item">
+                    <label for="dateInput">Date:</label>
+                    <input type="date" id="dateInput">
+                </div>
+                <div class="daily-info-item">
+                    <label for="moodInput">Mood:</label>
+                    <select id="moodInput">
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="excited">Excited</option>
+                        <option value="calm">Calm</option>
+                        <option value="angry">Angry</option>
+                        <option value="Cheerful">Cheerful</option>
+                        <option value="Annoyed">Annoyed</option>
+                        <option value="Energetic">Energetic</option>
+                    </select>
+                </div>
+                <div class="daily-info-item">
+                    <label for="goalsInput">Goals:</label>
+                    <textarea id="goalsInput" placeholder="Enter your goals for the day"></textarea>
+                </div>
+            </div>
+            <div class="motivational-quote">
+                <p><b><i>"Your only limit is your mind"</i></b></p>
+            </div>
+        </div>
+        
+        <input type="text" id="taskInput" placeholder="Add a new task" autocomplete="off">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
